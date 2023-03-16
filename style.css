@@ -1,7 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Inner", sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.main-content {
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.left-section {
+  height: 100%;
+  grid-column: span 1;
+  background-color: #FFFFFF;
+}
+
+.right-section {
+  height: 100%;
+  grid-column: span 3;
+}
+
+.left-content {
+  padding: 3rem 2rem;
+  align-content: center;
+}
+
+.group {
+  width: 100%;
+  border-bottom: 1.5px solid #F0F0F6;
+  padding: 1.5rem 0;
+}
+
+#left-section-ProfilePic {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  color: #2B2B2B;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.description {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.logo-icon {
+  background-color: #FFB400;
+  border-radius: 50%;
+}
+
+.personal-info {
+  color: #2B2B2B;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+
+#field {
+  background-color: #FFB400;
+}
+
+#available-green {
+  color: #7EB942;
+}
+
+#languages {
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills {
+  text-align: left;
+  display: flex;
+}
+
+#skills-icon {
+  padding-right: 1rem;
+}
+
+#RectangleBTN {
+  width: 70%;
+  padding: 1.5rem 0;
+}
+
+#textBTN {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.downloadBTN {
+  position: relative;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,123 @@
 @use "variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inner', sans-serif;
 }
 
 body {
     background-color: variables.$background;
 }
 
-#sidebar {
+.main-content {
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.left-section {
+    height: 100%;
+    grid-column: span 1;
     background-color: variables.$sidebarBackground;
-    display: inline-block;
+}
+
+.right-section {
+    height: 100%;
+    grid-column: span 3;
+}
+
+.left-content {
+    padding: 3rem 2rem;
+    align-content: center;
+}
+
+.group {
+    width: 100%;
+    border-bottom: 1.5px solid variables.$grey-lines;
+    padding: 1.5rem 0;
+}
+
+#left-section-ProfilePic {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1rem;
+    align-items: center;
+    width: 100%;
+} 
+
+.title {
+    color: variables.$title;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1rem;
+} 
+
+.description {
+    color: variables.$description;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.logo-icon {
+    background-color: variables.$orange;
+    border-radius: 50%;
+}
+
+.personal-info { 
+    color: variables.$title;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+#field {
+    background-color: variables.$orange;
+}
+
+#available-green {
+    color: variables.$green;
+}
+
+#languages {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills {
+    text-align: left;
+    display: flex;
+}
+
+#skills-icon {
+    padding-right: 1rem;
+}
+
+#RectangleBTN {
+    width: 70%;
+    padding: 1.5rem 0;
+}
+
+#textBTN {
     position: absolute;
-    width: 305px;
-    height: 1315px;
-    left: 0px;
-    top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.downloadBTN {
+    position: relative;
+    text-align: center;
 }
