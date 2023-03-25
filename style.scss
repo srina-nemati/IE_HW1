@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inner', sans-serif;
+    font-family: 'Inter';
     list-style: none;
 }
 
@@ -17,21 +17,20 @@ body {
 .main-content {
     background-color: variables.$background;
     min-height: 100vh;
-    // margin: 2rem auto;
-    // width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .left-section {
-    height: 100%;
+    height: fit-content;
     grid-column: span 1;
     margin-right: 3rem;
     background-color: variables.$sidebarBackground;
 }
 
 .right-section {
-    height: 100%;
+    height: fit-content;
+    padding-bottom: 1rem;
     grid-column: span 3;
     width: 100%;
 }
@@ -338,4 +337,59 @@ body {
         width: 100%;
         text-align:center
     }
+}
+
+.education-items {
+    background-color: variables.$sidebarBackground;
+    padding: 2rem;
+    width: 98%;
+}
+
+.edu-row {
+    display: flex;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid variables.$grey-lines;
+}
+
+.edu-title {
+    padding-left: 3rem;
+    width: 80%;
+}
+
+.item-title {
+    color: variables.$title;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item-stu {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 4rem;
+}
+
+.item-time {
+    background-color: variables.$orange;
+    color: #FFFF;
+    padding: 5px 10px;
+}
+
+.row-info {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+
+.item-desc {
+    color: variables.$description;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+#last-edu-row {
+    border-bottom: 0px none;
 }

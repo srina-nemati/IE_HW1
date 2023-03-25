@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inner", sans-serif;
+  font-family: "Inter";
   list-style: none;
 }
 
@@ -19,14 +19,15 @@ body {
 }
 
 .left-section {
-  height: 100%;
+  height: fit-content;
   grid-column: span 1;
   margin-right: 3rem;
   background-color: #FFFFFF;
 }
 
 .right-section {
-  height: 100%;
+  height: fit-content;
+  padding-bottom: 1rem;
   grid-column: span 3;
   width: 100%;
 }
@@ -329,6 +330,61 @@ body {
 .my-services div {
   width: 100%;
   text-align: center;
+}
+
+.education-items {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  width: 98%;
+}
+
+.edu-row {
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F0F0F6;
+}
+
+.edu-title {
+  padding-left: 3rem;
+  width: 80%;
+}
+
+.item-title {
+  color: #2B2B2B;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item-stu {
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 4rem;
+}
+
+.item-time {
+  background-color: #FFB400;
+  color: white;
+  padding: 5px 10px;
+}
+
+.row-info {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.item-desc {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+#last-edu-row {
+  border-bottom: 0px none;
 }
 
 /*# sourceMappingURL=style.css.map */
