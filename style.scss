@@ -101,6 +101,7 @@ body {
 
 #field {
     background-color: variables.$orange;
+    padding: 3px 3px;
 }
 
 #available-green {
@@ -215,7 +216,7 @@ body {
 #circle11 {
     position: absolute;
     width: 16px;
-    top: 91%;
+    top: 95%;
     left: 14%;
 }
 
@@ -391,3 +392,46 @@ body {
 #last-edu-row {
     border-bottom: 0px none;
 }
+
+@media screen and (max-width: 1000px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-section {
+        margin: 0;
+    }
+    .intro-content {
+        flex-direction: column;
+    }
+    .introduction {
+        padding: 2rem 1rem;
+    }
+    .services-desc {
+        width: 325px;
+    }
+    .education-items {
+        width: 95%;            
+        margin: 0px auto;
+    }
+    .edu-title {
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+    #triangle {
+        left: 90%;
+        top: 96%;
+    }
+    #circle11{
+        top: 50%;
+        left: 12%;
+    }
+    #circle21 {
+        top: 1%;
+        left: 91%;
+    }
+    #rectangle52{
+        top: 66%;
+        left: 84%;
+    }
+}
+    
