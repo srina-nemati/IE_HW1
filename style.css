@@ -66,9 +66,24 @@ body {
   padding-bottom: 1rem;
 }
 
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+
 .logo-icon {
   background-color: #FFB400;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.logo-icon a {
+  text-decoration: none;
+}
+.logo-icon a img {
+  margin: 3px;
 }
 
 .personal-info {
@@ -225,7 +240,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .services-desc {
@@ -233,8 +248,10 @@ body {
   font-size: 15px;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   color: #767676;
+  width: 438px;
+  margin: 0px auto;
 }
 
 .services-items {
@@ -246,22 +263,22 @@ body {
 }
 
 .service {
+  background-color: #FFFFFF;
   width: 310px;
   height: 225px;
   position: relative;
-  background-color: #FFFFFF;
 }
-.service img {
+
+#service-img {
   position: relative;
-  left: 122px;
-  top: 35px;
+  left: 121px;
+  top: 28px;
 }
 
 .service-title {
+  color: #2B2B2B;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
-  color: #2B2B2B;
   text-align: center;
   position: absolute;
   top: 122px;
@@ -280,21 +297,20 @@ body {
   width: 100%;
 }
 
-#final-service-title {
+#service-title-advertise {
   top: 31px;
 }
 
-#final-service-desc {
+#service-desc-advertise {
   top: 60px;
   margin-left: 25px;
   margin-right: 25px;
   width: 260px;
 }
 
-#order-service {
+#advertise {
   text-align: center;
   color: #FFB400;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -303,16 +319,16 @@ body {
   position: absolute;
 }
 
-#order-container {
+#advertise-box {
   position: absolute;
   top: 174px;
   width: 100%;
   margin-top: 13px;
 }
-#order-container img {
-  position: absolute;
-  left: 191px;
-  top: 3px;
+
+.my-services div {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
