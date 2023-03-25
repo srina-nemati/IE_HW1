@@ -12,6 +12,8 @@ This is a responsive resume template built with HTML and SCSS. The template is d
 ## Installation
 
 To get started with the project, clone the repository to your local machine:
+
+
 git clone https://github.com/srina-nemati/IE_HW1.git
 
 
